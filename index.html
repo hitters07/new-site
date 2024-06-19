@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <style>* {
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav {
+        background: rgb(206, 117, 117);
+    }
+    
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        width: 100%;
+        background: black;
+        color: white;
+    }
+    
+    ul li {
+        padding-left: 40px;
+        display: inline;
+    }
+    
+    .centerdiv {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .heading1 {
+        margin-top: 100px;
+        /* word-spacing: 20px; */
+         letter-spacing: 20px;
+    }
+    
+    .maintext {
+        margin-left: 30px;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    
+    .spantext {
+        padding-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    input[type="text"] {
+        border: none;
+        border-bottom: 2px solid white;
+        background-color: transparent;
+        color: white;
+        outline: none;
+        padding: 5px 0;
+        width: 300px;
+    }
+    
+    input[type="text"]::placeholder {
+        color: white;
+        opacity: 0.6;
+        /* Adjusts the placeholder text opacity */
+    }
+    
+    .btn {
+        border: 2px solid white;
+        background-color: transparent;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s, color 0.3s;
+        outline: none;
+        border-radius: 10px;
+    }
+    
+    .mainbox {
+        display: flex;
+        padding-top: 120px;
+        align-items: center;
+        justify-content: space-evenly;
+    
+    }
+    
+    img {
+        box-shadow: 0 4px 5px 0 rgba(82, 79, 79, 0.8), 0 6px 20px 0 rgba(109, 108, 108, 0.8);
+    }
+    
+    .box {
+        display: flex;
+        height: 500px;
+        width: 100vw;
+        color: white;
+    }
+    
+    .boxtext {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        font-size: 30px;
+        margin-left: 90px;
+        margin-top: 100px;
+        font-weight: bold;
+    
+    }
+    .boxtext1{
+        font-size: 20px;
+        opacity: 0.7;
+        margin-left: 150px;
+        margin-top: 50px;
+    }</style>
+
+</head>
+
+<body style="background-color: black;">
+    <nav>
+        <!-- <img src="" alt="LOGO"> -->
+        <ul>
+            <li>Home</li>
+            <li>Work With Us</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+
+    <div class="centerdiv">
+        <h1 class="heading1">NAME</h1>
+        <p class="maintext">Earn More. Work Less. Enjoy Life.</p>
+        <p class="spantext">
+            Join 140,000+ readers every Saturday
+            morning for The Koe Letter and learn a bit about life & business too</span>
+        </p>
+        <div class="form">
+            <form action="">
+                <input type="text" placeholder="Youre Mail" name="" id="formtext">
+                <button class="btn">Read </button>
+            </form>
+        </div>
+    </div>
+    <div class="mainbox">
+        <div class="box">
+            <img src="./img1.avif" alt="" height="400px" width="500px">
+            <div>
+            <p class="boxtext">Building Wealth for the Future</p>
+            <p class="boxtext1">Investing wisely is the key to financial independence. By saving consistently and making informed investment choices, you can grow your wealth over time. Remember, it's not just about earning money but making your money work for you.</p>
+        </div>
+        </div>
+        <!-- <div class="box">box2</div> -->
+
+    </div>
+</body>
+
+</html>
