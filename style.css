@@ -1,31 +1,36 @@
 body {
-    font-family: 'Playwrite IS', sans-serif;
+    font-family: sans-serif, system-ui;
     color: white;
     margin: 0;
     padding: 0;
+    scroll-behavior:smooth;
 }
 
 nav {
-    margin-top: 0px;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+    margin-top: -40px !important;
     display: flex;
     background: black;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 80px;
+    padding: 10px 67px;
     position: fixed;
-    top: 0;
+    top: -10px !important;
     left: 0;
     width: 100%;
     z-index: 1000;
-    bottom: 153.333;
     background-color: black;
-    background-position-y: 153.333;
+}
+
+.logodiv {
+
+    margin-top: 50px;
 }
 
 .logo {
-    margin-top: 11px;
-    font-size: 40px;
-    margin-left: 80px;
+    height: 100px;
+    width: 200px;
 }
 
 ul {
@@ -46,7 +51,7 @@ ul li:hover {
 .icon-div {
     display: flex;
     gap: 80px;
-    margin-right: 101px;
+    padding-top: 20px !important;
     margin-left: 20px;
 }
 
@@ -160,7 +165,8 @@ input[type="text"]::placeholder {
 .boxtext1 {
     margin-top: 20px;
     color: white;
-    
+
+
 }
 
 .boxheading {
@@ -244,10 +250,6 @@ footer {
     margin-top: 80px;
 }
 
-#aboutme {
-    margin-top: 127px;
-}
-
 a svg:hover {
     size: 2px;
     /* display: none; */
@@ -262,6 +264,8 @@ a svg:hover {
 }
 
 .letter {
+    display: flex;
+    flex-direction: column;
 
     background-color: black;
     color: #ffffff;
@@ -277,22 +281,24 @@ a svg:hover {
 
 
 .article {
+    /* padding: 20px 20px; */
     height: 550px;
     width: 100%;
     border-radius: 8px;
-    background-color: #0f0808;
+    background-color: #302828;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    /* overflow: h;  */
+
     text-align: center;
-    /* padding: 20px; */
+
 }
 
 .article img {
+    opacity: 0.7;
     display: flex;
     flex-direction: column;
-    margin-top: -16px;
+    margin-top: px;
     opacity: 0.6;
-    height: 500px;
+    height: 400px;
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
@@ -306,6 +312,8 @@ a svg:hover {
 }
 
 .hr {
+    margin-left: 0px;
+    margin-right: px;
     margin-bottom: 39px;
 }
 
@@ -315,7 +323,7 @@ a svg:hover {
 }
 
 .artical-tag {
-    margin-top: -180px;
+    margin-top: -166px;
     color: rgba(255, 255, 255, 0.8);
     position: absolute;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -326,16 +334,52 @@ a svg:hover {
     font-size: larger;
 }
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.resource-item {
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.hrofartical {
+    margin-right: 20px;
+}
+
+
+
+
 
 @media (max-width: 768px) {
+    #mianbox1 {
+        flex-direction: column-reverse !important;
+    }
+
     .logo {
-        font-size: 30px;
-        margin-left: 20px;
+        height: 86px !important;
     }
 
     ul {
         padding-left: 20px;
-        padding-right: 113px;
+
     }
 
     ul li {
@@ -351,16 +395,19 @@ a svg:hover {
     .mainbox {
         flex-direction: column;
         padding-top: 60px;
-       
+
     }
 
     .box {
         flex-direction: column;
         height: auto;
         width: 100%;
-        margin-left: -4px;
-        padding-left: 15px;
-        padding-right: 0px;
+        /* margin-left: -2px; */
+        /* padding-left: 15px */
+        margin: 0px 0px;
+
+
+
     }
 
     .boxtext,
@@ -371,13 +418,13 @@ a svg:hover {
         font-family: initial;
         text-align: left;
         margin-left: 10px;
-        
+
     }
 
     img {
         width: 90% !important;
         height: 287px !important;
-        margin-right: 18px;
+        /* margin-right: 18px; */
     }
 
     input[type="text"] {
@@ -403,7 +450,15 @@ a svg:hover {
     }
 
     nav {
-        padding: 10px;
+        padding-left: 0px;
+        height: 100px;
+        width: 100%;
+        padding-top: 20px !important;
+        position: inherit;
+        padding-right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
     }
 
@@ -424,10 +479,6 @@ a svg:hover {
         padding: 0 20px;
     }
 
-    .footer-section {
-        margin-bottom: 20px;
-    }
-
     .footer-section ul li a {
         font-size: 16px;
     }
@@ -442,6 +493,31 @@ a svg:hover {
 
     .abouttexthead {
         font-size: medium;
+    }
+
+    #aboutme {
+        padding-top: 0px;
+    }
+
+    .artical-tag {
+        margin-top: -80px;
+    }
+
+    .heading {
+        margin-top: 0px;
+        font-size: large;
+    }
+
+    .resource-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-content {
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -459,7 +535,8 @@ a svg:hover {
         margin-top: 20px;
         font-family: initial;
         text-align: left;
-        margin-left: 34px;
+        margin-left: 20px;
+        font-size: medium;
     }
 
     .footer-section h2 {
@@ -470,8 +547,8 @@ a svg:hover {
     .footer-section ul,
     .footer-section li {
         font-size: 12px;
-        margin-right: -21px;
     }
+
 
     .footer-section ul li a {
         font-size: 14px;
@@ -489,12 +566,15 @@ a svg:hover {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 0px;
+        margin-top: 20px;
         font-size: initial;
     }
 
     #aboutmetext {
+        padding: 10px 10px;
+        text-align: center;
         margin-top: 0px;
+        font-size: medium;
     }
 
     .abouttexthead {
@@ -511,13 +591,70 @@ a svg:hover {
         margin-right: 20px !important;
     }
 
+    .artical-tag-p {
+        font-size: small;
+        margin-right: 11px;
+    }
+
+    .article {
+        height: 483px;
+
+
+    }
+
+    .artical-tag h2 {
+        font-size: larger;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .hrofartical {
+        margin-right: 20px;
+    }
+
+    .article img {
+
+        width: 349px !important;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+
+    }
+
+    .resources-section {
+        margin-top: 0px;
+    }
+
+    .resources-section h2 {
+        font-size: larger;
+    }
+
+    .resources-section h3 {
+        font-size: medium;
+    }
+
+    .footer-section p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .resource-item {
+        font-size: large;
+    }
+
+    .resource-item p {
+        font-size: small;
+    }
+    #textchangeh4{
+        margin-right: 10px !important;
+    }
+
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .logo {
-        font-size: 35px;
-        margin-left: 25px;
-    }
+
 
     ul {
         padding-left: 25px;
@@ -559,9 +696,9 @@ a svg:hover {
     }
 
     img {
-        width: 70% !important;
-        height: 300px !important;
-        margin-right: 20px;
+
+        height: 350px !important;
+        /* margin-right: 20px; */
     }
 
     input[type="text"] {
@@ -590,7 +727,11 @@ a svg:hover {
     }
 
     .icon-div1 {
-        display: none;
+        /* display: none; */
+        margin-right: 0px;
+        margin-left: 0px;
+        gap: 20px;
+        padding-right: 32px;
     }
 
     .boxheading {
@@ -598,11 +739,14 @@ a svg:hover {
         align-items: center;
         justify-content: center;
         margin-top: 0px;
+
     }
 
     .footer-content {
         flex-direction: column;
         padding: 0 25px;
+        align-items: center;
+        justify-content: center;
     }
 
     .footer-section {
@@ -623,12 +767,33 @@ a svg:hover {
 
     #aboutmetext {
         margin-top: 0px;
+
     }
 
     .h4 {
         font-size: small;
         font-family: sans-serif;
         margin-right: 20px !important;
+    }
+
+    .artical-tag h2 {
+        font-size: larger;
+    }
+
+    .footer {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .resource-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        height: 120px !important;
     }
 
 }
